@@ -15,10 +15,10 @@ variable "product_name" {
 
 # VPC Variables #
 
-variable "vpc_name" {
-  description = "Name of VPC. Do not add prefix / suffix"
-  type        = string
-}
+# variable "vpc_name" {
+#   description = "Name of VPC. Do not add prefix / suffix"
+#   type        = string
+# }
 
 variable "instance_tenancy" {
   description = "Instance tenancy. Default value is set as default"
