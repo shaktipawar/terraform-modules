@@ -17,7 +17,8 @@ resource "aws_vpc" "vpc" {
     tags = merge(
                 var.vpc_tags, 
                 local.default_tags, 
-                map(
-                    "Name", "vpc-${var.product_name}-${var.environment}")
-                )
+                {
+                    "Name" = "vpc-${var.product_name}-${var.environment}"
+                }
+    )
 }
