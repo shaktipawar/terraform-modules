@@ -1,8 +1,3 @@
-variable "aws_region" {
-  description = "AWS region to deploy the VPC"
-  type        = string
-}
-
 variable "environment" {
   description = "Environment name. e.g. dev, test, prod"
   type        = string  
@@ -14,12 +9,6 @@ variable "product_name" {
 }
 
 # VPC Variables #
-
-# variable "vpc_name" {
-#   description = "Name of VPC. Do not add prefix / suffix"
-#   type        = string
-# }
-
 variable "instance_tenancy" {
   description = "Instance tenancy. Default value is set as default"
   type        = string
