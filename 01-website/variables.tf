@@ -46,4 +46,5 @@ variable "enable_dns_support" {
 variable "vpc_tags" {
   description = "Tags to be applied to the VPC. Do not add tags like Environment, CreatedBy, CreatedOn, Product_Name. They are already considered."
   type        = map(string)
+  default = {}
 }
