@@ -18,7 +18,7 @@ resource "aws_vpc" "vpc" {
                 var.vpc_tags, 
                 local.default_tags, 
                 map(
-                    "Name", "vpc-${var.var.product_name}-${var.environment}")
+                    "Name", "vpc-${var.product_name}-${var.environment}")
                 )
             }"
 }
