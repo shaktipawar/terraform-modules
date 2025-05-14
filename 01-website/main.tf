@@ -8,6 +8,11 @@ locals {
     }
 }
 
+provider "aws" {
+    region = var.aws_region
+    #You need to create / add profile settings on Terraform Cloud (Environment Variables)
+    #profile = "terraform-codebase"       
+}
 
 resource "aws_vpc" "vpc" {
     cidr_block = var.cidr_block
